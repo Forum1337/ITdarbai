@@ -1,0 +1,34 @@
+#include <fstream>
+#include <iostream>
+#include <iomanip>
+
+using namespace std;
+
+const char R[] = "r.txt"
+
+void coliai(int m, float &c);
+void pedos(int m, float &p);
+void jardai(int m, float &j);
+
+int main()
+{
+    ofstream r(R);   
+    r  << "Metrai       Coliai      Pedos    Jardai" << endl;
+    for(int i = 1; i <= 5;i++){
+            r << i << "   " << coliai(i, &c) << pedos(i, &p) << jardai(i, &j) << endl;
+    }
+    r.close();
+    return 0;
+}
+
+void coliai(int m, float &c){ //nzn nevekia
+    c = m*100/2.54;
+}
+
+void pedos(int m, float &p){
+    coliai(m,c);p = c/12;
+}
+
+void jardai(int m, float &j){
+    pedos(m, p); j = p/3;
+}

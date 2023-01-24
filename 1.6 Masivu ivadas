@@ -2,16 +2,22 @@
 #include <fstream>
 
 const char D[] = "d.txt";
+const char R[] = "r.txt";
+
 const int CMAX = 100;
 using namespace std;
 
   int A[CMAX];
   int n;
   
+  void skaityti();
+  void spausdinti();
+  
 int
 main ()
 {
-
+    skaityti();
+    spausdinti();
 
   return 0;
 }
@@ -25,10 +31,14 @@ skaityti ()
   for (int i = 0; i < n; i++)
     {
       d >> A[i];
-      cout << i << " " << A[i] << endl;
     }
   d.close ();
+}
 
-
-
+void spausdinti(){
+    ofstream r(R);
+    for(int i = 0; i < n; i++){\
+        r << i << " " << A[i] << endl;
+    }
+    r.close();
 }

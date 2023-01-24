@@ -1,0 +1,27 @@
+#include <iostream>
+#include <fstream>
+
+const char D[] = "d.txt";
+const char R[] = "r.txt";
+
+const int CMAX = 500;
+using namespace std;
+
+  int A[CMAX];
+  int n;
+  
+  void ();
+  void ();
+  
+int
+main ()
+{
+  return 0;
+}
+
+void skaityti (){
+ 
+}
+
+void spausdinti(){
+}

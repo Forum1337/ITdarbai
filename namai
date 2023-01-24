@@ -1,0 +1,45 @@
+#include <iostream>
+#include <fstream>
+
+const char D[] = "d.txt";
+const char R[] = "r.txt";
+
+const int CMAX = 500;
+using namespace std;
+
+  int A[CMAX];
+  int n;
+  
+  
+  
+  
+  void ();
+  int suma 
+  
+  
+
+
+int
+main ()
+{ 
+
+int a = suma(int n, int A[]); // visu gyv. skaicius
+// int lygsuma = suma (int x, int Alyg[])
+  return 0;
+}
+
+void  (){
+ 
+}
+
+void (){
+    
+}
+
+int suma (int x, int X[]){
+    int s = 0;
+    for(int i = 0; i < x; i++){
+       s += X[i];
+    }
+    return s;
+}

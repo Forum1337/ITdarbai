@@ -1,0 +1,22 @@
+#include <fstream>
+#include <iostream>
+#include <vector>
+#include <iomanip>
+
+using namespace std;
+
+const char D[] = "d.txt";
+const char R[] = "r.txt";
+const int n = 30; // komandos kountas
+
+void ugiai(int n[], int mot, int vyr);
+
+int main()
+{
+    ifstream d(D);
+    
+    int mynumb[2] = {5, 10};
+    mynumb.push_back(1);
+    cout << mynumb[3];
+    return 0;
+}
